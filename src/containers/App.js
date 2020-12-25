@@ -6,7 +6,7 @@ import HeaderContainer from './HeaderContainer/HeaderContainer';
 
 const App = () => {
   return (
-    <Layout style={{height: "100%"}}>
+    <Layout style={{height: "100vh"}}>
     <HeaderContainer/>
     <Algorithm/>
   </Layout>

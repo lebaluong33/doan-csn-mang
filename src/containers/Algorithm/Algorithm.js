@@ -1,6 +1,7 @@
 import React from 'react';
 import { Layout, Menu, Breadcrumb } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import FCFS from './../../components/FCFS/FCFS';
 
 const { SubMenu } = Menu;
 const { Content, Sider } = Layout;
@@ -20,8 +21,8 @@ const Algorithm = () => {
           <Menu.Item key="2">SJF</Menu.Item>
           <Menu.Item key="3">SRTF</Menu.Item>
           <Menu.Item key="4">RR</Menu.Item>
-          <Menu.Item key="4">HRRN</Menu.Item>
-          <Menu.Item key="4">MLFQ</Menu.Item>
+          <Menu.Item key="5">HRRN</Menu.Item>
+          <Menu.Item key="6">MLFQ</Menu.Item>
         </SubMenu>
       </Menu>
     </Sider>
@@ -32,12 +33,11 @@ const Algorithm = () => {
       <Content
         className="site-layout-background"
         style={{
-          padding: 24,
           margin: 0,
           minHeight: 280,
         }}
       >
-        Content
+        <FCFS />
       </Content>
     </Layout>
   </Layout>
